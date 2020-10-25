@@ -1,0 +1,7 @@
+install.packages("data.table")
+install.packages("optparse")
+install.packages("ggrepel")   
+install.packages("RColorBrewer")
+install.packages("png")
+devtools::install_github("eliocamp/ggnewscale@v0.4.3")
+devtools::install_github("thomasp85/patchwork@v1.0.1")
