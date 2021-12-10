@@ -31,4 +31,4 @@ From: rocker/tidyverse:3.5.1
 
 %startscript
   source /usr/local/miniconda3/etc/profile.d/conda.sh
-  conda acticate samplot
+  conda activate samplot
