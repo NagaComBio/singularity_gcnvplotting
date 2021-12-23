@@ -25,10 +25,10 @@ From: rocker/tidyverse:3.5.1
   conda create -n samplot -c anaconda -c bioconda -c conda-forge --file samplot_env.yml
   echo "PATH=/usr/local/miniconda3/envs/samplot/bin:$PATH" >> /usr/local/lib/R/etc/Renviron
 
+  # The conda env will be activated by default
+  echo ". /usr/local/miniconda3/etc/profile.d/conda.sh" >> $SINGULARITY_ENVIRONMENT
+  echo "conda activate samplot" >> $SINGULARITY_ENVIRONMENT
+
 %runscript
-  source /usr/local/miniconda3/etc/profile.d/conda.sh
-  conda activate samplot
 
 %startscript
-  source /usr/local/miniconda3/etc/profile.d/conda.sh
-  conda activate samplot
